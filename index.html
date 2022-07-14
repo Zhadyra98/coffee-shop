@@ -8,32 +8,46 @@
     <title>Document</title>
 </head>
 <body>
-    <header>
-        <div class="header">
-            <div class="header_logo">
-                <a href="/" class="header_logo_link">
-                    <img src="./img/coffee-beans.svg" alt="Header logo" class="header_logo_pic">
-                </a>
+    <div class="wrapper">
+        <header class="header">
+            <div class="header__container">
+                <nav class="header_nav">
+                    <a href="/" class="header_logo_link">
+                        <img src="./img/coffee-beans.svg" alt="Header logo" class="header_logo_pic">
+                    </a>
+                    <ul class="header_list">
+                        <li class="header_item">
+                            <a href="#articles" class="header_link js-scroll">Coffee house</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#locations" class="header_link js-scroll">Our coffee</a>
+                        </li>
+                        <li class="header_item">
+                            <a href="#videos" class="header_link js-scroll">For your pleasure</a>
+                        </li>
+                    </ul>
+                    <div class="hamburger">
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                        <span class="bar"></span>
+                    </div>
+                </nav>
             </div>
-            <nav class="header_nav">
-                <ul class="header_list">
-                    <li class="header_item">
-                        <a href="#articles" class="header_link js-scroll">Coffee house</a>
-                    </li>
-                    <li class="header_item">
-                        <a href="#locations" class="header_link js-scroll">Our coffee</a>
-                    </li>
-                    <li class="header_item">
-                        <a href="#videos" class="header_link js-scroll">For your pleasure</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
-    </header>
-    <main>
-        <section class="intoduction">
-
-        </section>
-    </main>
+        </header>
+        <main>
+            <section class="intoduction">
+                <div class="intro_content">
+                    <h6>
+                        Everything You Love About Coffee
+                    </h6>
+                    <span><img src="./img/Beans logo.svg" alt ="logo" class="beans_logo"></span>
+                    <h4 class="intro_subheading">We makes every day full of energy and taste</h4>
+                    <h4 class="intro_subheading">Want to try our beans?</h4>
+                    <button class="btn">More</button>
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="./script.js"></script>
 </body>
 </html>
