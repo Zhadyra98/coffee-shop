@@ -1,4 +1,39 @@
 @import url(https://fonts.googleapis.com/css?family=Merienda:regular,700);
+/* Obnulenie */
+*,
+*::before,
+*::after {
+    padding: 0;
+    margin: 0;
+    border: 0;
+    box-sizing: border-box;
+}
+a{
+    text-decoration: none;
+}
+ul,
+ol,
+li {
+    list-style: none;
+}
+img {
+    vertical-align: top;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-weight: inherit;
+    font-size: inherit;
+}
+html,
+body {
+    height: 100%;
+    line-height: 1;
+}
+/* --------------------------------*/
 .wrapper{
     overflow: hidden;
     display: flex;
@@ -32,13 +67,6 @@
     display: flex;
     gap: 15px;
 }
-/* .navbar{
-    min-height: 70px;
-    display: flex;
-    justify-content: space-between;
-    align-items:center;
-    padding: 0 24px;
-} */
 .header_link{
     text-decoration: none;
     color: #FFFFFF;
@@ -127,13 +155,14 @@ h6{
     font-family: 'Merienda', cursive;
 }
 .intoduction{
-    height: 640px;
     width: 100%;
     background: url(../img/header-bg.png) no-repeat;
     background-size: 100%;
 }
-.intro_content{
-    padding-top: 180px;
+.intro__container{
+    padding-top: 110px;
+    padding-bottom: 100px;
+    max-height: 640px;
     text-align: center;
 }
 .beans_logo{
@@ -174,8 +203,16 @@ h6{
         font-size: 22px;
         line-height: 30px;
     }
+    .intro__container{
+        padding-top: 90px;
+        padding-bottom: 80px;
+    }
 }
 @media (max-width:991.98px){
+    .intro__container{
+        padding-top: 55px;
+        padding-bottom: 45px;
+    }
     h6{
         font-weight: 400;
         font-size: 30px;
@@ -220,17 +257,127 @@ h6{
     .beans_logo{
         display: none;
     }
-    @media (max-width:479.98px){
-        .intro_content{
-            padding-top: 30px;
-        }
-        h6{
-            font-size: 15px;
-        }
-        .intro_subheading{
-            font-size: 8px;
-        }
 
+}
+@media (max-width:479.98px){
+    .intro__container{
+        padding-top: 25px;
+        padding-bottom: 15px;
+    }
+    .intro_content{
+        padding-top: 10px;
+    }
+    h6{
+        font-size: 10px;
+    }
+    .intro_subheading{
+        font-size: 5px;
+    }
+
+}
+/*INTRODUCTION section style END */
+/*ABOUT US section style START */
+.about_us__container{
+    text-align: center;
+    padding-top: 80px;
+    padding-bottom: 100px;
+    align-items: center;
+}
+.section_heading {
+    font-family: Merienda;
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 35px;
+}
+.about_us__logo {
+    margin: 20px auto 40px;
+}
+.about_us_paragraph {
+    font-family: Merienda;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px; 
+    padding: auto 20px;   
+}
+.about_us_p_container{
+    margin: 0 auto;
+    max-width: 590px;
+}
+@media (max-width:991.98px){
+    .about_us__container{
+        padding-top: 40px;
+        padding-bottom: 50px;
+    }
+    .about_us_p_container{
+        max-width: 520px;
     }
 }
-/*INTRODUCTION section style START */
+@media (max-width:699.98px){
+    .about_us_p_container{
+        max-width: 400px;
+    }
+    .about_us_paragraph {
+        font-size: 11px;
+    }
+
+}
+@media (max-width:479.98px){
+
+}
+/*ABOUT US section style END */
+.our_best__container{
+    text-align: center;
+    padding-top: 80px;
+}
+.our_best{
+    background: url(../img/bg-best.png) no-repeat;
+    background-size: 100%;
+}
+.our_best__content{
+    display: flex;
+    gap: 70px;
+    padding: 40px 110px 110px;
+}
+.about_us_item{
+    background: rgba(255, 255, 255, 0.65);
+    border-radius: 8px;
+    
+}
+.about_us_item img{
+    margin: 22px 34px 14px 35px;
+}
+.our_best_item_heading{
+    margin-bottom: 10px;
+    font-family: Merienda;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+}
+.our_best_item_price{
+    margin-bottom: 22px;
+    text-align: right;
+    padding-right: 22px;
+    font-family: Merienda;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 20px;
+}
+@media (max-width: 1300px){
+    .our_best__container{
+        padding-top: 20px;
+    }
+    .our_best__content{
+        gap: 50px;
+        padding: 20px 90px 110px;
+    }
+
+}
+@media (max-width: 1000px){
+
+}
+@media (max-width: 1100px){
+
+}
+@media (max-width: 1100px){
+
+}
